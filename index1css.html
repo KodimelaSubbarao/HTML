@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    .sa {
+      color: red;
+    }
+
+    #main-heading {
+      background-color: yellow;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    .city-heading {
+      color: blue;
+      font-size: 20px;
+    }
+
+    .city-description {
+      line-height: 1.5;
+      color: lime;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+    }
+
+    ol li:nth-child(2) {
+      background-color: yellow;
+    }
+
+    .link:active {
+      color: red;
+    }
+
+    .link:visited {
+      color: purple;
+    }
+
+    .link:hover {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <p style="color: red;">I am subbarao .</p>
+
+  <!--Exercise 1.2:  Write another sentence and use red coloured text in the paragraph using Internal style. -->
+  <p class="sa">Hello every one.</p>
+
+  <!--Exercise 1.3:  Create a heading and a paragraph under it. Display text of heading and paragraph tags in different color and font size using external CSS  -->
+
+  <h1 class="heading">Heading</h1>
+  <p class="paragraph">bapatla engineering college </p>
+
+  <!-- Exercise 1.4: Display "My Cities" as a main heading and apply css using id attribute such as changing background color, font color and font family. Display city names as a side headings and display paragraph about city under each city name. Apply css for paragraph's using class attribute such as line height, font color, font-family and font size etc. -->
+
+  <h1 id="main-heading">My Cities</h1>
+  <h2 class="city-heading">City 1</h2>
+  <p class="city-description">Guntur</p>
+  <h2 class="city-heading">City 2</h2>
+  <p class="city-description">Hyderabad </p>
+  <h2 class="city-heading">City 3</h2>
+  <p class="city-description">Bapatla </p>
+
+  <!--Exercise 1.5: Create an ordered list and change the background colour to yellow for the selected list items using descendent selectors. -->
+  <ol>
+    <li> Red </li>
+    <li> Green </li>
+    <li> Blue </li>
+  </ol>
+  <!--Exercise 1.6: Create 3 links and using pseudo selector, change the colours of the link when it is active, visited, hover. -->
+  <a href="https://www.youtube.com/" class="link"> Youtube </a> <br>
+  <a href="https://www.google.com/" class="link"> Google </a> <br>
+  <a href="https://www.w3schools.com/html/" class="link"> HTML </a><br>
+</body>
+
+</html>
