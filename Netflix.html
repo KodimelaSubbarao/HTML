@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="shortcut icon" href="../Imgs/Netfix-icon.ico">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body{
+            background-color: black;
+            height: 500vh;
+        }
+        .image{
+            background-image: url(/public/Imgs/Netfix.jpg);
+            background-size: cover;
+            height: 120vh;
+            margin-top: -10px;
+            margin-left: -10px;
+            margin-right: -5px;
+        }
+        .shade{
+            background-color: rgba(0,0,0,0.6);
+            height: 120vh;
+            margin-top: -10px;
+            margin-left: -10px;
+            margin-right: -2px;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+            padding-left: 100px;
+            padding-right: 150px;
+        }
+        .head select{
+            margin-right: 15px;
+            width: 110px;    
+            height: 33px; 
+            background-color: black;
+            color: white;  
+            font-weight: bold;   
+        }
+        .head button{
+            width: 80px;    
+            height: 35px;
+            background-color: red;
+            color: white;
+            font-weight: bold;
+        }
+        .name1 span{
+            font-size: 60px;
+            font-weight: bold;
+            font-family: monospace;
+            color: red;
+        }
+        section{
+            color: white;
+            text-align: center;
+            padding-top: 180px;
+        }
+        .n1{
+            font-weight: bold;
+            font-size: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .n2{ 
+            padding-top: 12px;
+            font-size: 28px;
+            font-family: arial;
+        }
+        .n3{
+            padding-top: 20px;
+            font-size: 20px;
+            font-family: arial;
+            padding-bottom: 20px;
+        }
+        .mailid{
+            border: 2px solid;
+            padding-top: 10px;
+            background-color:  rgba(0,0,0,0.2);
+            width: 400px;
+            height: 40px;
+            font-size: 16px;
+            font-weight: bold;
+            font-family:Arial;
+            color: white;
+            margin-right: 6px;
+        }
+        .btn1{
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            font-size: 22px;
+            font-family:Arial;
+            width: 180px;
+            height: 58px;
+            border-radius: 6px;
+        }
+        .btn1 span{
+            padding-left: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="image">
+        <div class="shade">
+            <header>
+                <div class="name1">
+                    <span>NETFLIX</span>
+                </div>
+                <div>
+                    <form class="head">
+                        <select>
+                                <option>English</option>
+                                <option>हिन्दी</option>                   
+                        </select>
+                        <button>Sign In</button>
+                    </form>
+                </div>
+            </header>
+            <section>
+                <div class="n1"> Unlimited movies, TV shows and more</div>
+                <div class="n2">Watch anywhere. Cancel anytime.</div>
+                <main>
+                    <div class="n3">Ready to watch? Enter your email to create or restart your membership.</div>
+                    <div>
+                        <form class="fm" method="post" action="Netflix.jsp">
+                            <input class="mailid" type="email" placeholder="  Email address" name="emial id">
+                            <button class="btn1"> Get Started<span class="bi bi-chevron-right"></span></button>
+                        </form>
+                    </div>
+                </main>
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>

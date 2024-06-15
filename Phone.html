@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Phone</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .phone{
+            width:300px;
+            height:500px;
+            box-shadow: 5px 5px 10px black;
+            margin-left: 300px;
+            border-radius: 30px;
+            border-width: 5px;
+            border-color: black;
+            border-style: solid;
+            background-image: url("../Imgs/ntr.jpg");
+            background-position: center;
+        }
+        .search{
+            box-shadow: 3px 3px 2px white;
+            width: 280px;
+            height: 40px;
+            background-color: white;
+            border-radius: 30px;
+            margin-top: 20px;
+            margin-left: 5px;
+            padding: 2px;
+        }
+        .search div
+        {
+            display:inline;
+            margin-inline: 55px;
+        }
+        .s11{
+            margin-top: 10px;
+            font-size: 25px;
+        }
+        #ss span{
+            margin-right: 5px;
+        }
+        .bi-google{
+            margin-left: -40px;
+        }
+        .time{
+            color:white;
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            margin-left: 10px;
+            margin-top: 25px;
+        }
+        .time1{
+            font-size: 30px;
+        }
+        .apps
+        {
+            color:white;
+            padding: 5px;
+            margin-left:35px;
+            margin-top: 10px;
+        }
+        .apps1{
+            margin-top: 150px;
+        }
+        .apps span{
+            margin-right: 25px;
+            font-size: 30px;
+        }
+       .name{
+        color: white;
+        font-size: 13px;
+        margin-left: 25px;
+       }
+       .name span
+       {
+        margin-right: 10px;
+       }
+       .name1{
+        color: white;
+        font-size: 13px;
+        margin-left: 32px;
+       }
+       .name1 span
+       {
+        margin-right: 26px;
+       }
+       .name2{
+        color: white;
+        font-size: 13px;
+        margin-left: 30px;
+       }
+       .name2 span
+       {
+        margin-right: 20px;
+       }
+    </style>
+</head>
+<body>
+    <div class="phone">
+        <a href="https://www.google.com/">
+        <div class="search">
+            
+            <div class="s11"><span  class="bi bi-google"></span></div>
+            <div class="s11" id="ss"><span class="bi bi-mic"></span>
+                <span class="bi bi-camera-fill"></span>
+                
+            </div>
+        </a>
+        </div>
+        <div class="time">
+           <div>
+            <span class="time1">05:30 </span> <br>
+            <span>Sun, Jan 28 PM</span>
+           </div>
+           <div>
+                <span class="bi bi-tag">Ameerpet 30<sup>o</sup>C</span><br>
+                <span class="bi bi-house">Hyderabad 30<sup>o</sup>C</span>
+           </div>
+        </div>
+        <div class="apps1">
+            <div class="apps">
+                <a href="https://play.google.com/store/games?hl=en&gl=US"><span class="bi bi-playstation"></span></a>
+                <a href="https://www.timeanddate.com/calendar/"><span class="bi bi-calendar"></span></a>
+                <a href="https://messages.google.com/web/authentication"> <span style="background-color: rgb(45, 52, 150);" class="bi bi-messenger"></span></a>
+                <a href="https://chromewebstore.google.com/category/themes"><span class="bi bi-app-indicator"></span></a>
+            </div>
+            <div class="name">
+                <span>Play Store</span>
+                <span> Calender</span>
+                <span>Messages</span>
+                <span>Themes</span>
+            </div>
+            <div class="apps">
+                <a href="https://www.microsoft.com/en-in/store/top-free/apps/pc"><span style="background-color: rgb(214, 109, 230);" class="bi bi-app"></span></a>
+                <a href="https://www.online-stopwatch.com/large-online-clock/"><span class="bi bi-clock"></span></a>
+                <a href="https://chromewebstore.google.com/detail/settings/afcolgfopkbeailjgaablmhiemdnhlch"><span class="bi bi-tools"></span></a>
+                <a href="https://www.google.com/"><span style=" background-image:linear-gradient(red, yellow,green); border-radius:50px;"  class="bi bi-browser-chrome"></span></a>
+            </div>
+            <div class="name2">
+                <span>Appstore</span>
+                <span>Clock</span>
+                <span>Settings</span>
+                <span>Google</span>
+            </div>
+            <div class="apps">
+                <a href="https://www.truecaller.com/"><span class="bi bi-telephone" style="background-color: rgb(31, 220, 119);"></span></a>
+                <a href="https://www.wynk.in/music/playlist/telugu-top-20/bb_1518974217282?q=telugu"><span class="bi bi-file-music" style="background-color: rgb(156, 114, 194);"></span></a>
+                <a href="https://www.youtube.com/"> <span style="background-color: rgb(145, 31, 135);"class="bi bi-camera-video-fill"></span></a>
+                <a href="https://webcamtests.com/"><span style="background-color: rgba(49, 49, 49, 0);" class="bi bi-camera"></span></a>
+            </div>
+            <div class="name1">
+                <span>Phone</span>
+                <span> Music</span>
+                <span>Video</span>
+                <span>Camera</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

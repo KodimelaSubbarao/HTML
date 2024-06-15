@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Header and Nav Element</title> 
+    <link href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" >
+    <style>
+        .head{
+            display:grid;
+            grid-template-columns:4fr 7fr 1fr;
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-top: 10px;
+            background-color: rgb(43, 84, 162);
+            color: white;
+            height: 300px;
+        }
+        .btn{
+            width:100px;
+        }
+        .title
+        {
+            font-size: 22px;
+            font-style:bold;
+            font-weight: 20px;
+
+        }
+        .links span{
+            padding-left: 14px;
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.944);
+        }
+    </style>
+</head>
+<body>
+    <header class="head">      
+            <div class="title">
+               <sapn>ARSHA</sapn>
+            </div>
+            <div>
+                <nav class="links">
+                    <span>Home</span>
+                    <span>About</span>
+                    <span> Services</span>
+                    <span>Portfolio</span>
+                    <span>Team</span>
+                    <span>Drop Down</span>
+                    <span>Contact</span>     
+                </nav>
+            </div>
+            <div class="btn">
+                <button>Get Started</button>
+            </div>
+    </header>
+</body>
+</html>

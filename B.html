@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-in">
+    <head>
+        <title>Practice</title>
+        <meta charset="UTF-8">
+        <meta name="keyword" content="ol,ul,li,ordered list,unordered list,list">
+        <meta name="discription" content="Practicing ordered and unordered list">
+        <meta name="viewport" content="width=device-width,initial scale=1.0">
+        <meta http-equiv="refresh" content="none">
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <style tyep="text/css">
+            .demo{
+                display:flex;
+            }
+            .demo li{
+                margin-left: 30px;
+            }
+            .demo1 li{
+                display:inline;
+                margin-left: 30px;
+            }
+            .col{
+                display: grid;
+                grid-template-columns: 6fr 6fr;
+            }
+            .col1{
+                columns: 2;
+            }
+            .scroll{
+                
+                border: 1px solid gray;
+                height: 80px;
+                color:red;
+                overflow:auto;
+                width: 200px;
+                
+            }
+            .scroll li{
+                font-size: 25px;
+                background-color: yellow;
+                margin-bottom: 10px;
+                margin-top: 5px;
+               
+            }
+            .remove{
+                
+                border: 1px solid gray;
+                height: 80px;
+                color:rgb(0, 255, 4);
+                overflow:auto;
+                width: 200px;
+                list-style: none;
+            }
+            .remove li{
+                font-size: 25px;
+                background-color: yellow;
+                margin-bottom: 10px;
+                margin-top: 5px;
+               
+            }
+        </style>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <section>
+            <div>
+                <h1>Odered List</h1>
+                <div>
+                    <p>Without Using any attributes</p>
+                    <ol>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ol>
+                    <p>
+                        With using type(A,a,i,I,1) attribute inside ol element 
+                    </p>
+                    <ol type="A">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ol>
+                    <ol type="a">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ol>
+                    <ol type="i">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ol>
+                    <ol type="I">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ol>
+                    <p>
+                        With using type and start attribute inside ol element 
+                    </p>
+                    <ol type="A" start="5">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ol>
+                    <ol start="5">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ol>
+                    <ol type="I" start="5">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ol>
+                    <p>
+                        1.With using type and start attribute inside ol element <br>
+                        2.Using reversed attribute is applicable for numbers.Other types of A,a,i and I does not applicable.
+                    </p>
+                    <ol type="1" start="2" reversed>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>XML</li>
+                        <li>JSON</li>
+                        <li>Bootstrap</li>
+                    </ol>
+                    Other types of A,a,i and I does not applicable.We try to used to give a wrong output.
+                    <ol type="A" start="3" reversed>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>XML</li>
+                        <li>JSON</li>
+                        <li>Bootstrap</li>
+                    </ol>
+                    <ol type="i" start="3" reversed>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>XML</li>
+                        <li>JSON</li>
+                        <li>Bootstrap</li>
+                    </ol>
+                </div>
+                <div>
+                    <h2>Nested Ordered List: We can write insede a ol element again we write another ol element.Another ol element write in inside list element</h2>
+                    <pre>
+                       <b><u>Example</u></b> 
+                       
+                        &lt;ol&gt;
+                            &lt;li&gt; Item-1 
+                                &lt;ol&gt;
+                                     &lt;li&gt; Value-1 &lt;/li&gt;
+                                     &lt;li&gt; Value-2 &lt;/li&gt;
+                                &lt;/ol&gt;  
+                            &lt;/li&gt;
+                        &lt;/ol&gt;
+                    </pre>
+                    <ol>
+                        <li>HTML
+                            <ol type="a">
+                                <li>Normal Elements(bold,italic)</li>
+                                <li>Void Elements(img,link,meta)</li>
+                                <li>Rich Content Elements(textarea,address)</li>
+                                <li>Raw Elements(& nbsp;, & gt;)</li>
+                                <li>Forigen Elements(svg,canavas)</li>
+                            </ol>
+                        </li>
+                        <li>CSS
+                            <ol type="i">
+                                <li>Selectors</li>
+                                <li>Units</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <h4>Q) Arrange the list items side by side with the help of display:flex (with numbering) and display:inline(without numbering). </h4>
+                    <ol>
+                        <li>Flex: Question____________?
+                            <ol class="demo">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Js</li>
+                                <li>XML</li>
+                                <li>JSON</li>
+                            </ol>
+                        </li>
+                        <li>Inline: Question____________?
+                            <ol class="demo1">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Js</li>
+                                <li>XML</li>
+                                <li>JSON</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <h4> Q) Keeping list items multiple Columns.With the help of display:grid(numbering order left to right) and columns(numbering order top to bottom)</h4>
+                    <ol>
+                        <li>grid: Question____________?
+                            <ol class="col">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Js</li>
+                                <li>XML</li>
+                                <li>JSON</li>
+                            </ol>
+                        </li>
+                        <li>columns: Question____________?
+                            <ol class="col1">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Js</li>
+                                <li>XML</li>
+                                <li>JSON</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <h4> Q) Create a scrollable list. With the help of border, 
+                        hight(it is must be less than items) and overflow(out of border items hide/display them it. </h4>
+                        <pre>
+                            overflow:hidden/scroll/auto;
+                                1.hidden->hide the items
+                                2.scroll->it is provide the scroll option and it is provide vertical and horizental scroll option.
+                                3.auto->it is automatically decide to provide vertical(items bottom side) or horizental(items right side) scroll bar based on content.
+                        </pre>
+                        <center>
+                        <ol class="scroll" >
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                            <li>XML</li>
+                            <li>JSON</li>
+                            <li>Angular</li>
+                            <li>React JS</li>
+                        </ol>
+                    </center>
+                </div>
+                <div>
+                    <h4> Q) Removing numbering for ordered list.With the help of list-style:none attribute in CSS.</h4>
+                    <center>
+                        <ol class="remove" >
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                            <li>XML</li>
+                            <li>JSON</li>
+                            <li>Angular</li>
+                            <li>React JS</li>
+                        </ol>
+                    </center>
+                </div>
+            </div>
+        </section>
+        <footer>
+
+        </footer>
+    </body>
+</html>
